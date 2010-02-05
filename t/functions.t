@@ -10,5 +10,5 @@ is( $stat->n, 10, 'Check if n is correct' );
 is( $stat->min, 1, 'Check if min is correct' );
 is( $stat->max, 10, 'Check if max is correct' );
 is( $stat->mean, 5.5, 'Check if mean is correct' );
-is( $stat->variance, 9.16666666666667, 'Check if variance is correct' );
-is( $stat->standard_deviation, 3.02765035409749, 'Check if standard_deviation is correct' );
+is( substr($stat->variance,0,15), 9.1666666666666, 'Check if variance is correct' );
+is( substr($stat->standard_deviation,0,15), 3.0276503540974, 'Check if standard_deviation is correct' );
